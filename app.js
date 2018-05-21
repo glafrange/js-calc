@@ -2,19 +2,39 @@ let numbersDiv = document.getElementById('numbers-div');
 let operationsDiv = document.getElementById('operations-div');
 let display = document.getElementById('display');
 
-let currentNum = 0;
+let num1 = null;
+let num2 = null;
 let operation = "";
+const operationsList = ['+', '-', '*', '/', '='];
 
-function
+function calculate(num1, num2, operation){
+  if(operation === "+"){
+    return num1 + num2;
+  } else if(operation === "-"){
+    return num1 - num2;
+  } else if(operation === "*"){
+    return num1 * num2;
+  } else if(operation === "/"){
+    return num1 / num2;
+  }
+}
 
 numbersDiv.addEventListener('click', function(e){
-  let selection = e.target.textContent;
-  console.log(typeof selection);
+  let num = e.target.textContent;
   display.textContent += e.target.textContent;
 });
 
 operationsDiv.addEventListener('click', function(e){
-  let selection = e.target.textContent;
-  console.log(typeof selection);
-  display.textContent = e.target.textContent;
+  let operation = e.target.textContent;
+  if(!operationsList.includes(display.textContent) && num1 !== null){
+    num2 = parseInt(display.textContent);
+    display.textContent = calculate(num1, num2, operation);
+    num1 = null;
+    num2 = display.textContent;
+  } else{
+    if(num1 === null){
+      num1 = display.textContent;
+      display.textContent = operation;
+    }
+  }
 });
