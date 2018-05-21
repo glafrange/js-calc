@@ -1,0 +1,27 @@
+#calculator{
+  margin-top: 150px;
+  border-top-left-radius: 4%;
+  border-top-right-radius: 4%;
+  border-bottom-left-radius: 2%;
+  border-bottom-right-radius: 2%;
+  border: 1px solid black;
+  background-color: #A1DDE0;
+}
+
+#display{
+  height: 50px;
+  background-color: white;
+}
+
+span{
+  border: 1px solid black;
+  font-size: 30px;
+}
+
+#calc-head{
+  padding: 20px;
+}
+
+body{
+  background-color: #CBBEE9;
+}
