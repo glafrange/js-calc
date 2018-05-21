@@ -3,7 +3,6 @@
   <head>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
-    <script src="app.js"></script>
   </head>
   <body class="container">
     <div class="row">
@@ -14,31 +13,38 @@
         <div class="row">
           <span id="display" class="col-sm">
         </div>
-        <div class="row">
-          <span class="col-sm text-center" id="plus">+</span>
-          <span class="col-sm text-center" id="minus">-</span>
-          <span class="col-sm text-center" id="multiply">*</span>
-          <span class="col-sm text-center" id="add">/</span>
+        <div id="operations-div">
+          <div class="row">
+            <span class="col-sm text-center" id="plus">+</span>
+            <span class="col-sm text-center" id="minus">-</span>
+            <span class="col-sm text-center" id="multiply">*</span>
+            <span class="col-sm text-center" id="add">/</span>
+            <span class="col-sm text-center" id="equals">=</span>
+          </div>
         </div>
-        <div class="row">
-          <span class="col-sm text-center" id="1">1</span>
-          <span class="col-sm text-center" id="2">2</span>
-          <span class="col-sm text-center" id="3">3</span>
-        </div>
-        <div class="row">
-          <span class="col-sm text-center" id="4">4</span>
-          <span class="col-sm text-center" id="5">5</span>
-          <span class="col-sm text-center" id="6">6</span>
-        </div>
-        <div class="row">
-          <span class="col-sm text-center" id="7">7</span>
-          <span class="col-sm text-center" id="8">8</span>
-          <span class="col-sm text-center" id="9">9</span>
-        </div>
-        <div class="row">
-          <span class="col-sm text-center" id="0">0</span>
+        <div id="numbers-div">
+          <div class="row">
+            <span class="col-sm text-center" id="1">1</span>
+            <span class="col-sm text-center" id="2">2</span>
+            <span class="col-sm text-center" id="3">3</span>
+          </div>
+          <div class="row">
+            <span class="col-sm text-center" id="4">4</span>
+            <span class="col-sm text-center" id="5">5</span>
+            <span class="col-sm text-center" id="6">6</span>
+          </div>
+          <div class="row">
+            <span class="col-sm text-center" id="7">7</span>
+            <span class="col-sm text-center" id="8">8</span>
+            <span class="col-sm text-center" id="9">9</span>
+          </div>
+          <div class="row">
+            <span class="col-sm text-center" id="0">0</span>
+          </div>
         </div>
       </div>
   </div>
+
+  <script src="app.js"></script>
   </body>
 </html>
